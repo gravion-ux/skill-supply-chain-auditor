@@ -1,0 +1,31 @@
+{
+  "name": "skill-supply-chain-auditor",
+  "version": "0.1.0",
+  "description": "Audits AI agent skill packages for the supply-chain risks that matter when an agent runs someone else's instructions and code: prompt injection, unsafe shell, obfuscated payloads, embedded secrets and unpinned dependencies.",
+  "license": "MIT",
+  "author": "gravion-ux",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "skill-auditor": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/report.test.js test/rules.test.js test/scanner.test.js",
+    "check": "node --check src/index.js && node --check src/cli.js && node --check src/loader.js && node --check src/rules.js && node --check src/scanner.js && node --check src/findings.js && node --check src/report.js && node --check src/redact.js",
+    "audit": "node src/cli.js audit ."
+  },
+  "keywords": [
+    "security",
+    "supply-chain",
+    "ai",
+    "agent",
+    "skills",
+    "mcp",
+    "audit"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
