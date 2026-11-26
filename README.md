@@ -1,8 +1,10 @@
+<p align="center"><img src="assets/banner.svg" alt="skill-supply-chain-auditor banner" width="100%"/></p>
+
 # Skill Supply Chain Auditor
 
-Audits AI agent **skill packages** for the risks that only matter when an agent runs someone
-else's instructions and code: prompt injection, unsafe shell commands, obfuscated payloads,
-embedded secrets and unpinned dependencies.
+[![CI](https://github.com/gravion-ux/skill-supply-chain-auditor/actions/workflows/ci.yml/badge.svg)](https://github.com/gravion-ux/skill-supply-chain-auditor/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+**Audits AI agent skill packages for the risks that only matter when an agent runs someone else's instructions and code: prompt injection, unsafe shell commands, obfuscated payloads,.**
 
 An agent skill is a folder with a `SKILL.md` and often a `package.json`. The `SKILL.md`
 frontmatter declares what the agent is allowed to do, and the body is text the agent will
